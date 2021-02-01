@@ -121,7 +121,6 @@ def main(arduino):
 
     while True:
         request = arduino.readline()
-        request = request.decode("ascii").replace("\r\n", "")
         print(f"Received request: {request}")
         
         # 'GET_PV' triggers a response containing all current process names and their corresponding values.
